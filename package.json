@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-generator",
+  "version": "1.0.0",
+  "description": "builds a website ",
+  "main": "app.js",
+  "scripts": {
+    "test": "john doehub"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJWesthoff/portfolio-generator.git"
+  },
+  "keywords": [
+    "portfolio",
+    "webpage",
+    "generator"
+  ],
+  "author": "KJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KJWesthoff/portfolio-generator/issues"
+  },
+  "homepage": "https://github.com/KJWesthoff/portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
