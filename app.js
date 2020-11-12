@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const { prototype } = require('inquirer/lib/objects/choice');
+const {writeFile, copyFile} = require('./utils/generate-site.js')
 
-const fs = require('fs');
 const generatePage = require('./src/page-template.js');
 
 
@@ -144,28 +144,12 @@ promptUser()
       return copyFile();
     })
     .then(copyFileReponse => {
-      console.log(fs.copyFileReponse);
+      console.log(copyFileReponse);
     })
     .catch(err => {
       console.log(err);
     });
   
-
-
-    
-    // fs.writeFile('./dist/index.html', pageHTML, err => {
-    //     if(err) throw new Error(err);
-    //     console.log("Page created - see index.html");
-    //     fs.copyFile('./src/style.css', './dist/style.css', err => {
-    //       if(err){
-    //         console.log(err);
-    //         return;
-    //       }
-    //       console.log("stylesheet copied!")
-    //     });
-    // });
-
-    
 
 
 
